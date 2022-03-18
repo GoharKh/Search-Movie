@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movie</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:ital,wght@0,100;1,100&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@100&family=Shadows+Into+Light&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><h2> SEARCH <img src="images/movie.png" alt=""><br> YOUR MOVIE</h2></a>
+        </div>
+        <div id="search">
+            <input type="text" id="searched" placeholder="Search...">
+            <button onclick = "searchMovie()" id="btn" type="submit"><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="loader-main">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
